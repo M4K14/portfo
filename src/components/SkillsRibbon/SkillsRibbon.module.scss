@@ -1,0 +1,18 @@
+//These styles are used inside the SkillsCard.module.scss
+
+.skill_container_left,
+.skill_container_right {
+  margin: 1rem;
+  background-color: darkcyan;
+  height: 25vh;
+  transform: rotateZ(-3deg) translateX(-2%);
+}
+
+.skill_container_middle {
+  @extend .skill_container_left;
+  margin-left: auto;
+  transform: rotateZ(3deg) translateX(-1%);
+  background-color: red;
+  position: relative;
+  top: 3%;
+}

@@ -1,0 +1,34 @@
+$primary-color: rebeccapurple;
+$secondary-color: white;
+$primary-border-radius: 2rem;
+
+@mixin outwardCorner-Left(
+  $Bradius: $primary-border-radius,
+  $Scolor: $secondary-color
+) {
+  position: absolute;
+  top: 0;
+  right: calc($Bradius * -1);
+  content: "";
+  width: $Bradius;
+  height: $Bradius;
+  border-top-left-radius: $Bradius;
+  background-color: transparent;
+  box-shadow: $Bradius/-4 $Bradius/-4 0 $Bradius/4 $Scolor;
+}
+
+@mixin outwardCorner-Right(
+  $Bradius: $primary-border-radius,
+  $Scolor: $secondary-color
+) {
+  position: absolute;
+  top: 0;
+  left: calc($Bradius * -1);
+  content: "";
+  width: $Bradius;
+  height: $Bradius;
+  background-color: transparent;
+  border-top-right-radius: $Bradius;
+  box-shadow: $Bradius/4 $Bradius/-4 0 $Bradius/4 $Scolor,
+    -10px 0 0 0px $primary-color;
+}

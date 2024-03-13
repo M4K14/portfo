@@ -1,0 +1,25 @@
+@use "../../style\ properties.scss"as style;
+
+.hero {
+  position: relative;
+  margin: 2.5vh auto 0;
+  height: 95vh;
+  width: 98%;
+  border-radius: style.$primary-border-radius;
+  overflow: hidden;
+}
+
+p.skills {
+  position: absolute;
+  z-index: 1;
+  bottom: 1%;
+  font-size: larger;
+  font-weight: bold;
+  background-color: style.$secondary-color;
+  border-radius: style.$primary-border-radius;
+  padding: 0 style.$primary-border-radius;
+  text-transform: lowercase;
+  margin-left: calc(50% - style.$primary-border-radius);
+
+  letter-spacing: 0.1ch;
+}

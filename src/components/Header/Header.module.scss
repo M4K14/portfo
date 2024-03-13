@@ -1,0 +1,27 @@
+@use "../../style\ properties.scss"as style;
+
+.header {
+  background: style.$primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  .logo {
+    background: style.$secondary-color;
+    border-bottom-right-radius: style.$primary-border-radius;
+    width: clamp(3rem, 7rem, 10rem);
+  }
+  p {
+    position: relative;
+    text-align: center;
+    padding: style.$primary-border-radius - 0.5;
+    border-bottom-right-radius: style.$primary-border-radius;
+    &::after,
+    &::before {
+      @include style.outwardCorner-Left();
+    }
+    &::before {
+      top: 100%;
+      left: 0;
+    }
+  }
+}

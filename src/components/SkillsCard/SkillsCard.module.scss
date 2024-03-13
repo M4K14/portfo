@@ -1,0 +1,21 @@
+@use "../SkillsRibbon/SkillsRibbon.module.scss";
+
+ul.cards {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 1rem;
+  list-style: none;
+  li {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+    width: 15%;
+    border: 3px solid whitesmoke;
+    border-radius: 0.3rem;
+    margin: 0.5rem;
+  }
+}

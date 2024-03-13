@@ -1,0 +1,50 @@
+@use "../../style\ properties.scss"as style;
+
+nav {
+  // --nav-translateX: 70%;
+  position: relative;
+  display: flex;
+  background-color: style.$secondary-color;
+  border-bottom-left-radius: style.$primary-border-radius;
+  padding: style.$primary-border-radius - 0.5;
+  // transform: translateX(var(--nav-translateX));
+  transition: all 0.2s ease-in-out;
+  button {
+    background-color: aqua;
+    width: 3.5rem;
+    height: 1.5rem;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+  }
+  &::after,
+  &::before {
+    @include style.outwardCorner-Right();
+  }
+  &::before {
+    top: 100%;
+    // left: calc(100% - var(--nav-translateX) - style.$primary-border-radius);
+    left: calc(100% - style.$primary-border-radius);
+    transition: all 0.2s ease-in-out;
+  }
+  ul {
+    list-style: none;
+    display: none;
+    li {
+      display: inline-block;
+      padding: 0 1rem;
+      transition: 1s ease-out;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  &:hover {
+    // --nav-translateX: 0%;
+  }
+  // &:hover button {
+  //   width: 1.5rem;
+  //   border-radius: 50%;
+  //   color: transparent;
+  // }
+}

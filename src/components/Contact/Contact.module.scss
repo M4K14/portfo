@@ -1,0 +1,40 @@
+.footer {
+  background-color: #252525;
+  color: #fff799;
+  display: grid;
+  grid-template:
+    "head body body aside"
+    "head body body aside";
+  header {
+    grid-area: "head";
+    h3 {
+      position: relative;
+      margin: 20ch;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      line-height: 2ch;
+    }
+    .download {
+      position: absolute;
+      z-index: 1;
+      font-size: 3ch;
+      text-wrap: nowrap;
+      text-shadow: 0 0 5px #262626;
+    }
+    .cv {
+      position: absolute;
+      z-index: 0;
+      font-size: 30ch;
+    }
+  }
+  body {
+    font-size: 5ch;
+    margin: auto;
+  }
+  aside {
+    margin: auto;
+    font-size: 5rem;
+  }
+}

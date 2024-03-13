@@ -1,10 +1,17 @@
-import './App.css';
+import "./App.css";
+import Certification from "./components/Certification/CertComponent";
+import Contact from "./components/Contact/ContactComponent";
+import Hero from "./components/Hero/HeroComponent";
+import SkillsRibbon from "./components/SkillsRibbon/SkillsRibbonComponent";
 
 function App() {
   return (
-    <div className="App">
-      <h1>test</h1>
-    </div>
+    <>
+      <Hero />
+      <SkillsRibbon />
+      <Certification />
+      <Contact />
+    </>
   );
 }
 
