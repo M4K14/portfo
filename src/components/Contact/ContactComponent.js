@@ -1,12 +1,20 @@
 import styles from "./Contact.module.scss";
-import { FaTelegram } from "react-icons/fa";
+import {
+  FaTelegram,
+  FaMastodon,
+  FaGithub,
+  FaStackOverflow,
+} from "react-icons/fa";
 import { BsSignal } from "react-icons/bs";
-import { FaMastodon } from "react-icons/fa";
+import { GoMoveToTop } from "react-icons/go";
 import { IconContext } from "react-icons";
 
 const Contact = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id="contact" className={styles.footer}>
+      <a href="#top" className={styles.gotop}>
+        <GoMoveToTop />
+      </a>
       <header>
         <h3>
           <span className={styles.download}>Download my</span>{" "}
@@ -18,10 +26,28 @@ const Contact = () => {
         <address>🤙 Phone: +98 939 320 1404</address>
       </body>
       <aside>
-        <IconContext.Provider value={{ style: { margin: ".5rem" } }}>
-          <FaTelegram />
-          <BsSignal />
-          <FaMastodon />
+        <IconContext.Provider value={{ style: { margin: ".4rem" } }}>
+          <a href="https://t.me/+989393201404" target="_blank">
+            <FaTelegram />
+          </a>
+          <a
+            target="_blank"
+            href="https://signal.me/#eu/ZuAXJxJC3N2JBosFi4cNC6zU0SpVVQkln5QAaVe6W43AX-CbM2xE04Rel5vFExQK"
+          >
+            <BsSignal />
+          </a>
+          <a href="https://infosec.exchange/@M4K14" target="_blank">
+            <FaMastodon />
+          </a>
+          <a href="https://github.com/M4K14" target="_blank">
+            <FaGithub />
+          </a>
+          <a
+            href="https://stackoverflow.com/users/16621255/mahmood-kiaheyrati"
+            target="_blank"
+          >
+            <FaStackOverflow />
+          </a>
         </IconContext.Provider>
       </aside>
     </footer>

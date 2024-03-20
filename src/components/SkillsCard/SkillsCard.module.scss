@@ -5,17 +5,18 @@ ul.cards {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
   li {
     opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     max-height: 100%;
     width: 15%;
-    border: 3px solid whitesmoke;
+    border: 3px solid #fbf5f3;
     border-radius: 0.3rem;
-    margin: 0.5rem;
+    margin: 1rem;
   }
 }

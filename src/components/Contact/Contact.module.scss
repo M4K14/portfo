@@ -1,6 +1,7 @@
 .footer {
+  --icon-colors: #fff799;
   background-color: #252525;
-  color: #fff799;
+  color: var(--icon-colors);
   display: grid;
   grid-template:
     "head body body aside"
@@ -35,6 +36,18 @@
   }
   aside {
     margin: auto;
+    font-size: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    a:visited {
+      color: var(--icon-colors);
+    }
+  }
+
+  .gotop {
+    position: absolute;
+    right: 0;
+    color: white;
     font-size: 5rem;
   }
 }

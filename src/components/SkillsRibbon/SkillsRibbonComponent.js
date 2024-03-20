@@ -2,26 +2,36 @@ import SkillsCard from "../SkillsCard/SkillsCardComponent";
 import {
   BiLogoReact,
   BiLogoRedux,
-  BiLogoSass,
-  BiLogoGit,
-  BiLogoJavascript,
-  BiLogoCss3,
+  BiLogoPython,
+  BiSolidData,
+  BiChip,
 } from "react-icons/bi";
+import { FaFigma, FaSass } from "react-icons/fa";
+import { SiGreensock } from "react-icons/si";
+import { TbRegexOff } from "react-icons/tb";
+import { TbCloudDataConnection } from "react-icons/tb";
+import { PiBracketsCurly, PiGithubLogo } from "react-icons/pi";
+import { IoIosGitBranch, IoLogoJavascript } from "react-icons/io";
 
 const listItemsLeft = {
-  Redux: <BiLogoRedux />,
   ReactJs: <BiLogoReact />,
-  Test: <BiLogoReact />,
+  Redux: <BiLogoRedux />,
+  SASS: <FaSass />,
+  Git: <IoIosGitBranch />,
+  Github: <PiGithubLogo />,
 };
 const listItemsMiddle = {
-  SASS: <BiLogoSass />,
-  Git: <BiLogoGit />,
-  test: <BiLogoReact />,
+  "JSE/S6": <IoLogoJavascript />,
+  CSS3: <PiBracketsCurly />,
+  Figma: <FaFigma />,
+  GreenSock: <SiGreensock />,
+  regex: <TbRegexOff />,
 };
 const listItemsRight = {
-  "JSE/S6": <BiLogoJavascript />,
-  CSS3: <BiLogoCss3 />,
-  TEST: <BiLogoReact />,
+  Algorithms: <BiChip />,
+  Python: <BiLogoPython />,
+  "RESTful APIs": <TbCloudDataConnection />,
+  "Data Structures": <BiSolidData />,
 };
 
 const SkillsRibbon = () => {

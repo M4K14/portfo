@@ -24,10 +24,16 @@ const Hero = () => {
   return (
     <>
       <section className={styles.hero}>
+        <svg width="1066" height="786" viewBox="0 0 1066 786" fill="none">
+          <path
+            id="imp"
+            d="M513.055 6C245.055 65.4539 -395.228 827.234 367.055 778C1265.05 720 1135.72 221.333 837.055 126C467.455 -6.8 274.388 30 261.055 80"
+          />
+        </svg>
         <Header />
         <Main />
       </section>
-      <p className={styles.skills} ref={skillsText}>
+      <p id="skills" className={styles.skills} ref={skillsText}>
         Skills
       </p>
     </>

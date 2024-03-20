@@ -32,7 +32,7 @@ const Intro = () => {
         A Front-End Dev <span>WHAT?</span>
       </h1>
       <h1>
-        Who's also a khar! <span>HOW?</span>
+        In love with React<span>HOW?</span>
       </h1>
     </div>
   );

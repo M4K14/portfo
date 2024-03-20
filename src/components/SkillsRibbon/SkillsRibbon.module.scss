@@ -2,17 +2,20 @@
 
 .skill_container_left,
 .skill_container_right {
+  position: sticky;
+  top: 0;
   margin: 1rem;
-  background-color: darkcyan;
+  background-color: #08a045;
   height: 25vh;
   transform: rotateZ(-3deg) translateX(-2%);
+  box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.2);
 }
 
 .skill_container_middle {
   @extend .skill_container_left;
   margin-left: auto;
   transform: rotateZ(3deg) translateX(-1%);
-  background-color: red;
-  position: relative;
-  top: 3%;
+  background-color: #6bbf59;
+  // position: relative;
+  // top: 3%;
 }

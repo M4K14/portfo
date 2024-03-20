@@ -9,6 +9,7 @@
     background: style.$secondary-color;
     border-bottom-right-radius: style.$primary-border-radius;
     width: clamp(3rem, 7rem, 10rem);
+    color: style.$primary-color;
   }
   p {
     position: relative;
@@ -18,6 +19,7 @@
     &::after,
     &::before {
       @include style.outwardCorner-Left();
+      pointer-events: none;
     }
     &::before {
       top: 100%;

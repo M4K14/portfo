@@ -1,50 +1,54 @@
 @use "../../style\ properties.scss"as style;
 
 nav {
-  // --nav-translateX: 70%;
+  --nav-translateX: 72%;
   position: relative;
   display: flex;
   background-color: style.$secondary-color;
   border-bottom-left-radius: style.$primary-border-radius;
-  padding: style.$primary-border-radius - 0.5;
-  // transform: translateX(var(--nav-translateX));
+  padding: (style.$primary-border-radius - 0.5) 1rem;
+  transform: translateX(var(--nav-translateX));
   transition: all 0.2s ease-in-out;
   button {
-    background-color: aqua;
+    background-color: #edf2f4;
     width: 3.5rem;
     height: 1.5rem;
     border: none;
-    border-radius: 50px;
+    border-radius: 1rem;
     transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    color: style.$primary-color;
   }
   &::after,
   &::before {
     @include style.outwardCorner-Right();
+    pointer-events: none;
   }
   &::before {
     top: 100%;
-    // left: calc(100% - var(--nav-translateX) - style.$primary-border-radius);
-    left: calc(100% - style.$primary-border-radius);
+    left: calc(100% - var(--nav-translateX) - style.$primary-border-radius);
+    // left: calc(100% - style.$primary-border-radius);
     transition: all 0.2s ease-in-out;
   }
   ul {
     list-style: none;
-    display: none;
     li {
       display: inline-block;
       padding: 0 1rem;
       transition: 1s ease-out;
       a {
         text-decoration: none;
+        text-transform: capitalize;
       }
     }
   }
-  &:hover {
-    // --nav-translateX: 0%;
+  &:hover button {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    color: transparent;
   }
-  // &:hover button {
-  //   width: 1.5rem;
-  //   border-radius: 50%;
-  //   color: transparent;
-  // }
+  &:hover {
+    --nav-translateX: 0%;
+  }
 }

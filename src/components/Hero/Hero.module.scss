@@ -4,9 +4,19 @@
   position: relative;
   margin: 2.5vh auto 0;
   height: 95vh;
+  box-shadow: 0 0 1rem 1px rgba(0, 0, 0, 0.7);
   width: 98%;
   border-radius: style.$primary-border-radius;
   overflow: hidden;
+  svg {
+    position: absolute;
+    width: 50rem;
+    left: 3%;
+    stroke: #ffb100;
+    stroke-linecap: round;
+    stroke-width: 0;
+    //strokeWidth is dynamically changed in NavComponent
+  }
 }
 
 p.skills {
@@ -15,11 +25,11 @@ p.skills {
   bottom: 1%;
   font-size: larger;
   font-weight: bold;
-  background-color: style.$secondary-color;
+  background-color: white;
   border-radius: style.$primary-border-radius;
   padding: 0 style.$primary-border-radius;
   text-transform: lowercase;
   margin-left: calc(50% - style.$primary-border-radius);
-
+  color: style.$primary-color;
   letter-spacing: 0.1ch;
 }

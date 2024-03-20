@@ -46,7 +46,7 @@ const SkillsCard = ({ container, listItems }) => {
       cardItem.current,
       { xPercent: 0 },
       {
-        xPercent: 50,
+        xPercent: 35,
         ease: "power2.inOut",
         scrollTrigger: {
           trigger: skillscontainer.current,

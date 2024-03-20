@@ -9,10 +9,14 @@ main[role="main"] {
   align-items: center;
   padding: var(--padding);
   img {
-    width: 50vmin;
-    border-radius: 1.5rem;
+    width: 45vmin;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     border: 3px solid transparent;
-    background: linear-gradient(to right, red, blue, yellow, green, aqua)
-      border-box;
+    background: linear-gradient(to right, red, yellow, green, aqua) border-box;
+    transition: 0.1s linear;
+    &:hover {
+      border: 10px solid transparent;
+      box-shadow: 0 0 1rem 2px rgba(0, 0, 0, 0.2);
+    }
   }
 }

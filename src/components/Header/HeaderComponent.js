@@ -15,7 +15,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo} onMouseEnter={(e) => scramble(e)}>
-        <p className="title-logo">{psudonym}</p>
+        <p id="top" className="title-logo">
+          {psudonym}
+        </p>
       </div>
       <Nav />
     </header>
